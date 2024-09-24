@@ -1,5 +1,7 @@
 from steps.data_ingestion_step import data_ingestion_step
 from steps.handle_missing_values_step import handle_missing_values_step
+from steps.feature_engineering_step import feature_engineering_step
+from steps.outlier_detection_step import outlier_detection_step
 
 
 from zenml import Model, pipeline
@@ -16,14 +18,23 @@ def ml_pipeline():
 
     # Data Ingestion Step
     raw_data = data_ingestion_step(
-        file_path="/Users/Administrator/Documents/GitHub/Prices-Predictor-System/data/archive.zip"
+        file_path=r"/Users/Administrator/Documents/GitHub/Prices-Predictor-System/data/archive.zip"
     )
 
     # Handling Missing Values Step
     filled_data = handle_missing_values_step(raw_data)
 
+    # Feature Engineering Step
+    engineered_data = feature_engineering_step(
+        filled_data, strategy="log", features=["Gr Liv Area", "SalePrice"]
+    )
 
-    return filled_data
+    # Outlier Detection Step
+    clean_data = outlier_detection_step(engineered_data, column_name="SalePrice")
+
+
+
+    return clean_data
 
 if __name__ == "__main__":
     # Running the pipeline
