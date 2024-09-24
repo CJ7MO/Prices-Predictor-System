@@ -18,8 +18,9 @@ def ml_pipeline():
 
     # Data Ingestion Step
     raw_data = data_ingestion_step(
-        file_path=r"/Users/Administrator/Documents/GitHub/Prices-Predictor-System/data/archive.zip"
+        file_path="/Users/Administrator/Documents/GitHub/Prices-Predictor-System/data/archive.zip"
     )
+    print(raw_data)   
 
     # Handling Missing Values Step
     filled_data = handle_missing_values_step(raw_data)
@@ -29,10 +30,11 @@ def ml_pipeline():
         filled_data, strategy="log", features=["Gr Liv Area", "SalePrice"]
     )
 
+    print(engineered_data)
+
     # Outlier Detection Step
     clean_data = outlier_detection_step(engineered_data, column_name="SalePrice")
-
-
+    print(clean_data)
 
     return clean_data
 
