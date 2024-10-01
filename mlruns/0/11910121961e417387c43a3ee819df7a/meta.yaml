@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/Documents/GitHub/Prices-Predictor-System/mlruns/0/11910121961e417387c43a3ee819df7a/artifacts
+end_time: 1727366437634
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 11910121961e417387c43a3ee819df7a
+run_name: crawling-chimp-143
+run_uuid: 11910121961e417387c43a3ee819df7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727366434641
+status: 3
+tags: []
+user_id: CJMO

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/Documents/GitHub/Prices-Predictor-System/mlruns/0/4b099cb2dcb44f5eab23d1286540c4ed/artifacts
+end_time: 1727722183427
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b099cb2dcb44f5eab23d1286540c4ed
+run_name: skillful-snail-503
+run_uuid: 4b099cb2dcb44f5eab23d1286540c4ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727722180051
+status: 3
+tags: []
+user_id: CJMO

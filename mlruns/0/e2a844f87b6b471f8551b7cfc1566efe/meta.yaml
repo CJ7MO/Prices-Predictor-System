@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/Documents/GitHub/Prices-Predictor-System/mlruns/0/e2a844f87b6b471f8551b7cfc1566efe/artifacts
+end_time: 1727724771390
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e2a844f87b6b471f8551b7cfc1566efe
+run_name: abundant-bass-61
+run_uuid: e2a844f87b6b471f8551b7cfc1566efe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727724768379
+status: 3
+tags: []
+user_id: CJMO
